@@ -1,5 +1,5 @@
-import { TitleCasePipe } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { JsonPipe, TitleCasePipe } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -92,6 +92,8 @@ export class App {
       author: 'Astrid Lindgren',
     },
   ];
+
+  favQuotes: Quote = this.quotes.filter((quote) => quote.id == 14)[0];
 }
 
 interface Quote {

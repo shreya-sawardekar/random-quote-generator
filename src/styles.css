@@ -6,17 +6,13 @@ body {
 }
 body {
   font-size: 16px;
-  background-color: #d6d6d6;
+  background: linear-gradient(90deg, rgba(59, 173, 170, 1) 35%, rgba(0, 212, 255, 1) 100%);
   font-family: Helvetica;
 }
-section {
-  padding: 0.2rem;
-}
-ul li {
-  padding: 0.5rem;
 
-  span {
-    font-style: italic;
-    color: brown;
-  }
+p {
+  margin: 0;
+}
+.text-right {
+  text-align: right;
 }

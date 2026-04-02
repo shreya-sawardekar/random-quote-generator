@@ -1,10 +1,8 @@
 <router-outlet />
-<section>
-  <h2>Popular quotes:</h2>
-
-  <ul>
-    @for(item of quotes; track item.id) {
-    <li>{{item.quote}} - <span>{{item.author | titlecase}}</span></li>
-    }
-  </ul>
+<section class="quote-container">
+  <h1>Random Quote Generator</h1>
+  <div>
+    <blockquote>{{favQuotes.quote}}</blockquote>
+    <p class="text-right">{{favQuotes.author | titlecase}}</p>
+  </div>
 </section>

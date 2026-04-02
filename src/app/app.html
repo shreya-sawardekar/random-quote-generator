@@ -1,8 +1,11 @@
 <router-outlet />
 <section class="quote-container">
   <h1>Random Quote Generator</h1>
+
   <div>
-    <blockquote>{{favQuotes.quote}}</blockquote>
-    <p class="text-right">{{favQuotes.author | titlecase}}</p>
+    <blockquote>{{currentQuote.quote}}</blockquote>
+    <p class="text-right">{{currentQuote.author | titlecase}}</p>
   </div>
+
+  <button (click)="getRandomQuote()">Get Another Quote</button>
 </section>

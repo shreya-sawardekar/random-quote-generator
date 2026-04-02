@@ -93,7 +93,12 @@ export class App {
     },
   ];
 
-  favQuotes: Quote = this.quotes.filter((quote) => quote.id == 14)[0];
+  currentQuote: Quote = this.quotes.filter((quote) => quote.id == 14)[0];
+
+  getRandomQuote(): void {
+    const index = Math.floor(Math.random() * this.quotes.length);
+    this.currentQuote = this.quotes[index];
+  }
 }
 
 interface Quote {

@@ -9,6 +9,7 @@
     border: 3px solid #184d7b;
     border-radius: 8px;
     padding: 1rem;
+    margin-bottom: 2rem;
 
     & > blockquote {
       font-size: 1.5rem;
@@ -19,5 +20,14 @@
     & > p {
       font-size: 1.1rem;
     }
+  }
+
+  button {
+    background: transparent;
+    border: 3px solid #184d7b;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
   }
 }
